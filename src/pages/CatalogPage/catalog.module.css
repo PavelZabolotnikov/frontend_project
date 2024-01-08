@@ -1,0 +1,16 @@
+.catalog {
+    height: calc(100vh - 154px);
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    border: 1px solid rgb(135, 235, 205);
+    color: rgb(135, 235, 205);
+  }
+  
+  .cards__wrapper {
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }

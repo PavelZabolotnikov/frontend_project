@@ -1,0 +1,23 @@
+.header {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 150px;
+    border: 1px solid rgb(135, 235, 205);
+  }
+  
+  .header h1 {
+    margin: 0;
+    color: rgb(135, 235, 205);
+  }
+  
+  .menu a {
+    margin: 0px 20px 0px 0px;
+    text-decoration: none;
+    color: rgb(135, 235, 205);
+  }
+  
+  .menu a:hover {
+    color: rgb(56, 104, 89);
+  }
