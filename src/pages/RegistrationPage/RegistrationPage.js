@@ -56,7 +56,7 @@ export const RegistrationPage = () => {
         setIsResultSuccess(data.success);
       })
       .catch(function (error) {
-        console.warn('Something went wrong.', error);
+        console.warn('Что-то пошло не так.', error);
       });
   };
 
@@ -83,7 +83,7 @@ export const RegistrationPage = () => {
           rules={[
             {
               required: true,
-              message: 'Please input your login!',
+              message: 'Пожалуйста, введите своц пароль!',
             },
             {
               validator: (_, value) => {
@@ -92,7 +92,7 @@ export const RegistrationPage = () => {
                 } else if (/^[a-zA-Z0-9]+$/.test(value)) {
                   return Promise.resolve();
                 } else {
-                  return Promise.reject('Login should include numbers and latin letters only');
+                  return Promise.reject('Пароль должен содержать только цыфры и английские буквы');
                 }
               },
             },
@@ -111,7 +111,7 @@ export const RegistrationPage = () => {
             },
             {
               required: true,
-              message: 'Please input your E-mail!',
+              message: 'Введите свой E-mail!',
             },
           ]}
         >
@@ -124,7 +124,7 @@ export const RegistrationPage = () => {
           rules={[
             {
               required: true,
-              message: 'Please input your password!',
+              message: 'Введите свой пароль',
             },
             {
               validator: (_, value) => {
@@ -133,7 +133,7 @@ export const RegistrationPage = () => {
                 } else if (/^[a-z]+$/.test(value)) {
                   return Promise.resolve();
                 } else {
-                  return Promise.reject('Password should include low latin letters only');
+                  return Promise.reject('Пароль должен содержать только английские буквы');
                 }
               },
             },
@@ -145,20 +145,20 @@ export const RegistrationPage = () => {
 
         <Form.Item
           name="confirm"
-          label="Confirm Password"
+          label="Повторите пароль"
           dependencies={['password']}
           hasFeedback
           rules={[
             {
               required: true,
-              message: 'Please confirm your password!',
+              message: 'Пожалуйста повторите пароль!',
             },
             ({ getFieldValue }) => ({
               validator(_, value) {
                 if (!value || getFieldValue('password') === value) {
                   return Promise.resolve();
                 }
-                return Promise.reject(new Error('The new password that you entered do not match!'));
+                return Promise.reject(new Error('Пароли не совпадают!'));
               },
             }),
           ]}
