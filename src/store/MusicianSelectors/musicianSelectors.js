@@ -1,0 +1,1 @@
+export const getMusician= (store) => store.musicianlist;
