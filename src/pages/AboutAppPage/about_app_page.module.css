@@ -1,0 +1,11 @@
+.about {
+    height: calc(100vh - 154px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #FF00C0;
+    background-color: black;
+    color: #FF00C0;
+  }
+  

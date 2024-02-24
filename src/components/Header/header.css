@@ -1,0 +1,21 @@
+.header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 150px;
+    border: 2px solid #FF00C0;
+    color: #FF00C0;
+    background-color: black;
+  }
+  
+  .header h1 {
+    margin: 0;
+  }
+  
+  .menu a {
+    margin: 0px 50px 0px 0px;
+    text-decoration: none;
+    color: #FF00C0;
+    background-color: black;
+  }
