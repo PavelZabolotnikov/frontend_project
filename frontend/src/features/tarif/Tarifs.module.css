@@ -1,0 +1,36 @@
+.card {
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  border-radius: 40px;
+  width: 280px;
+  height: 280px;
+  padding: 20px 10px 10px 10px;
+  overflow: hidden;
+  margin-right: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.title {
+  font-family: 'Bluecurve';
+  font-size: 24px;
+}
+.text {
+  font-size: 16px;
+}
+.container {
+  display: flex;
+  margin-top: 20px;
+  justify-content: space-around;
+}
+.darkContainer {
+  display: flex;
+  margin-top: 20px;
+  justify-content: space-around;
+}
+.darkContainer > * {
+  background-color: #797575;
+}
+.price {
+  font-size: 16px;
+}

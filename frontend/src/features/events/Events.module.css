@@ -1,0 +1,71 @@
+.container {
+  display: flex;
+  justify-content: center;
+  padding: 50px 0 50px 100px;
+  align-items: center;
+  position: relative;
+  /* height: 100vh; */
+}
+.containerColumn {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  z-index: 5;
+}
+.map > * {
+  width: 100% !important;
+  height: 50vh !important;
+}
+
+.header {
+  font-family: 'Bluecurve';
+  font-size: 40px;
+  z-index: 5;
+  align-self: center;
+}
+.img {
+  position: absolute;
+  bottom: -10rem;
+  left: 10rem;
+  height: 80vw;
+}
+.imgContainer {
+  overflow: hidden;
+}
+.outerContainer {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.containerText {
+  width: 90%;
+  font-size: 18px;
+}
+.containerText:first-child {
+  font-weight: 500;
+}
+.buttonPay {
+  /* margin-top: 20px; */
+  background-color: #f28b64 !important;
+  border-color: #f28b64 !important;
+  font-weight: 500 !important;
+  width: 30%;
+  align-self: center;
+  margin-bottom: 30px;
+}
+
+.contacts {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+  font-size: 16px;
+}
+
+.contactsContainer {
+  display: flex;
+  align-items: center;
+}
+.contactsContainer > * {
+  margin: 10px;
+}

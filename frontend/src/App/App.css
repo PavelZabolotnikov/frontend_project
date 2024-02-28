@@ -1,0 +1,176 @@
+@font-face {
+  font-family: 'Bluecurve';
+  src: url('../../public/fonts/Bluecurve-Regular.ttf');
+}
+@font-face {
+  font-family: 'Bluecurve-Light';
+  src: url('../../public/fonts/Bluecurve-Light.ttf');
+}
+.ligth-color-1 {
+  background-color: #e5e5e5 !important;
+}
+.dark-color-1 {
+  background-color: #797575 !important;
+  color: rgb(247, 247, 247) !important;
+}
+.dark-color-1 > * {
+  background-color: #797575 !important;
+  color: rgb(247, 247, 247) !important;
+}
+.dark-color-2 {
+  background-color: #aea2a2 !important;
+  color: rgb(247, 247, 247) !important;
+}
+* {
+  font-family: 'Montserrat';
+  text-align: justify;
+  --bs-gutter-x: 0 !important;
+  text-decoration: none !important;
+}
+.pravo-i-levo {
+  font-family: 'Bluecurve';
+}
+.pravo-i-levo-light {
+  font-family: 'Bluecurve-Light';
+}
+#root {
+  max-width: 100%;
+}
+.container {
+  max-width: 100%;
+}
+.logo-font {
+  font-weight: 500;
+  color: black;
+  font-family: 'Bluecurve-Light';
+}
+.header-main {
+  max-width: 100%;
+  display: flex;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  justify-content: end;
+  align-items: center;
+  font-size: 20px;
+  padding-right: 30px;
+}
+.container-header {
+  position: relative;
+  background-color: #e5e5e5 !important;
+  height: 95vh;
+  overflow: hidden;
+}
+.header-text-main {
+  font-weight: 500;
+  font-size: 60px;
+  margin: 0 0 25px 5rem;
+}
+.container-footer {
+  display: flex;
+  align-items: center;
+  height: 50%;
+}
+.container-flex-colunm {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+}
+.footer-img {
+  width: 100vw;
+  overflow: hidden;
+}
+.footer-text {
+  font-size: 22px;
+}
+.button-orange {
+  background-color: #f28b64 !important;
+  border-color: #f28b64 !important;
+  font-weight: 500 !important;
+}
+.button-orange:hover {
+  background-color: #9a634f !important;
+  border-color: #9a634f !important;
+}
+.button-blue {
+  background-color: #5290ea !important;
+  border-color: #5290ea !important;
+  font-weight: 500 !important;
+  font-size: 20px;
+}
+.button-blue:hover {
+  background-color: #3d6299 !important;
+  border-color: #3d6299 !important;
+}
+.error {
+  width: 100%;
+  height: 100vh;
+}
+.container-flex-row {
+  display: flex;
+  align-items: baseline;
+  position: absolute;
+  flex-flow: column;
+  top: 50px;
+  font-size: 32px;
+}
+
+.form-for-lawyer {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 70%;
+}
+
+.form-for-lawyer > * {
+  margin: 5px;
+}
+.btn-lawyer {
+  width: 70%;
+  margin-bottom: 10px;
+}
+
+.icons-con {
+  margin-top: 50px;
+  display: flex;
+  width: 400px;
+  justify-content: space-around;
+}
+.icon:hover {
+  transform: scale(1.2);
+  transition: 1s;
+  fill: white;
+}
+.bi-x-circle:hover {
+  cursor: pointer;
+}
+.icon-dark:hover {
+  transform: scale(1.2);
+  transition: 1s;
+  fill: black;
+}
+.link {
+  color: inherit;
+  font-weight: 500;
+}
+.link:hover {
+  color: inherit;
+  text-decoration: underline !important;
+}
+.modal-form {
+  height: 40vh;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+}
+.modal-form > * {
+  margin-bottom: 10px;
+  width: 70%;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  /* display: none; <- Crashes Chrome on hover */
+  -webkit-appearance: none;
+  margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+}
